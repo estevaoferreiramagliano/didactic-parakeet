@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Site de Estágio</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+
+</head> 
+
+<body> 
+
+    <!-- Cabeçalho e Menu --> 
+
+    <header> 
+
+        <nav class="navbar"> 
+
+            <div class="logo"> 
+
+                <h1>Estágio Online</h1> 
+
+            </div> 
+
+            <ul class="menu"> 
+
+                <li><a href="#lista-espera">Lista de Espera</a></li> 
+
+                <li><a href="#anexar-termo">Anexar Termo</a></li> 
+
+                <li><a href="#contatos">Contatos</a></li> 
+
+            </ul> 
+
+            <!-- Barra de pesquisa --> 
+
+            <div class="search-bar"> 
+
+                <input type="text" placeholder="Buscar..." id="searchInput"> 
+
+                <button onclick="searchFunction()">Pesquisar</button> 
+
+            </div> 
+
+        </nav> 
+
+    </header> 
+
+  
+
+    <!-- Seção de conteúdo --> 
+
+    <main> 
+
+        <!-- Lista de Espera --> 
+
+        <section id="lista-espera"> 
+
+            <h2>Lista de Espera</h2> 
+
+            <p>Aqui você pode ver a lista de espera de estágios disponíveis.</p> 
+
+        </section> 
+
+  
+
+        <!-- Anexar Termo de Estágio --> 
+
+        <section id="anexar-termo"> 
+
+            <h2>Anexar Termo de Estágio</h2> 
+
+            <p>Para enviar o seu termo de estágio, faça o upload abaixo:</p> 
+
+            <form action="#" method="POST" enctype="multipart/form-data"> 
+
+                <label for="termo">Escolha seu Termo de Estágio:</label> 
+
+                <input type="file" id="termo" name="termo" accept=".pdf,.doc,.docx" required> 
+
+                <button type="submit">Enviar</button> 
+
+            </form> 
+
+        </section> 
+
+  
+
+        <!-- Contatos --> 
+
+        <section id="contatos"> 
+
+            <h2>Contatos</h2> 
+
+            <p>Entre em contato conosco através do e-mail: <a href="mailto:contato@estagioonline.com">contato@estagioonline.com</a></p> 
+
+        </section> 
+
+    </main> 
+
+  
+
+    <!-- Scripts --> 
+
+    <script src="script.js"></script> 
+
+</body> 
+
+</html> 
